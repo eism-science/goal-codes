@@ -1,7 +1,7 @@
 # goal-codes
 
-Code and data for L. Razo, *Goal-Weighted Quantum Codes for Logical Qubits of Unequal Importance, with a Hardware
-Test* (EISM, Barcelona).
+Code and data for L. Razo and R. Jiang, *Goal-Weighted Quantum Codes for Logical Qubits of Unequal Importance, with a Hardware
+Test* (EISM, Barcelona, and Lancaster University).
 
 The paper asks which stabilizer code best protects two logical qubits of unequal importance under erasure, and whether
 the answer changes with the importance weights. It answers exactly for every stabilizer code on up to six physical
@@ -57,7 +57,7 @@ jobs `dbf58r8m94ac738ssbi0` (replication), `dbf59bnsstms73fd4ntg` (pilot) and `d
 Each phase has a design document (`DESIGN.md`, plus `TESTB_ADDENDUM.md` for the first hardware test) and a run log
 (`RUNLOG.md`); Phases 106 and 107 also have a results summary (`RESULTS.md`), and Phase 111's results are in its run log
 and `run/`. The design documents and run logs are unedited working records. Those of Phases 106 and 107 mention a grant
-application the work was planned for and folder locations on the author's machine; the records say which steps were
+application the work was planned for and folder locations on L. Razo's machine; the records say which steps were
 drafted with AI assistance (see the paper's statement on AI tools). The run logs
 report that each design's SHA-256 hash was recorded before its analysis ran; for Phases 106 and 107 this chronology was
 not independently timestamped. Phase 111 was frozen before running: `phase111/FREEZE_MANIFEST.txt` lists the SHA-256 of
