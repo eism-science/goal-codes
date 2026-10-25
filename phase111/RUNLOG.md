@@ -24,3 +24,5 @@ Times are local (Barcelona, UTC+1). Entries are added in order and never edited;
 - 18:10. `FREEZE_MANIFEST.txt` stamped with OpenTimestamps (`FREEZE_MANIFEST.txt.ots`, four calendars, pending
   Bitcoin confirmation), after the freeze commit 3eacc77. The confirmed proof is checked before the run and the result
   recorded in `TIMESTAMP_CHECK.json`.
+- 19:56. Proof upgraded: Bitcoin block 973103 (2026-10-25 19:00:31, 18:00:31 UTC); its merkle root equals the
+  proof's commitment on two block explorers. Recorded in `TIMESTAMP_CHECK.json`. No QPU job had been submitted.
