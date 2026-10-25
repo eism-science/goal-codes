@@ -1,0 +1,186 @@
+P1_profile_changes {'value': [0.55], 'holds': True}
+P2_gain_w0.5 {'value': np.float64(2.220446049250313e-16), 'holds': np.False_}
+P3_gain_w0.9 {'value': np.float64(0.0), 'holds': np.False_, 'predicted': 'fails'}
+P4_nonincreasing {'value': [np.float64(2.220446049250313e-16), np.float64(3.3306690738754696e-16), np.float64(2.220446049250313e-16), np.float64(1.1102230246251565e-16), np.float64(2.220446049250313e-16), np.float64(1.1102230246251565e-16), np.float64(1.1102230246251565e-16), np.float64(2.220446049250313e-16), np.float64(0.0), np.float64(1.1102230246251565e-16), np.float64(1.1102230246251565e-16)], 'holds': True}
+P5_quantum_gt_classical_w0.5 {'value': [np.float64(2.220446049250313e-16), np.float64(0.0048640000000004235)], 'holds': np.False_}
+
+n=2,p=0.1 breakpoints after []
+  w=0.50  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.90000 sep=0.90000 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.55  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.90000 sep=0.90000 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.60  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.90000 sep=0.90000 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.65  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.90000 sep=0.90000 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.70  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.90000 sep=0.90000 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.75  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.90000 sep=0.90000 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.80  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.90000 sep=0.90000 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.85  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.90000 sep=0.90000 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.90  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.90000 sep=0.90000 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.95  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.94050 sep=0.90000 gain=+0.04050  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.99  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98010 sep=0.90000 gain=+0.08010  PA=0.9000 PB=0.9000 regret=0.00000
+n=3,p=0.1 breakpoints after []
+  w=0.50  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98100 sep=0.94500 gain=+0.03600  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.55  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98100 sep=0.94950 gain=+0.03150  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.60  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98100 sep=0.95400 gain=+0.02700  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.65  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98100 sep=0.95850 gain=+0.02250  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.70  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98100 sep=0.96300 gain=+0.01800  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.75  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98100 sep=0.96750 gain=+0.01350  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.80  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98100 sep=0.97200 gain=+0.00900  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.85  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98100 sep=0.97650 gain=+0.00450  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.90  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98100 sep=0.98100 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.95  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98550 sep=0.98550 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+  w=0.99  all=0.90000 sep=0.90000 gain=+0.00000  | cl all=0.98910 sep=0.98910 gain=+0.00000  PA=0.9000 PB=0.9000 regret=0.00000
+n=4,p=0.1 breakpoints after []
+  w=0.50  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99360 sep=0.99000 gain=+0.00360  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.55  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99405 sep=0.99000 gain=+0.00405  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.60  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99450 sep=0.99000 gain=+0.00450  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.65  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99495 sep=0.99000 gain=+0.00495  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.70  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99540 sep=0.99000 gain=+0.00540  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.75  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99585 sep=0.99000 gain=+0.00585  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.80  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99630 sep=0.99000 gain=+0.00630  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.85  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99675 sep=0.99000 gain=+0.00675  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.90  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99720 sep=0.99000 gain=+0.00720  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.95  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99765 sep=0.99405 gain=+0.00360  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.99  all=0.94770 sep=0.90000 gain=+0.04770  | cl all=0.99801 sep=0.99801 gain=+0.00000  PA=0.9477 PB=0.9477 regret=0.00000
+n=5,p=0.1 breakpoints after []
+  w=0.50  all=0.94770 sep=0.92385 gain=+0.02385  | cl all=0.99891 sep=0.99450 gain=+0.00441  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.55  all=0.94770 sep=0.92623 gain=+0.02147  | cl all=0.99891 sep=0.99495 gain=+0.00396  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.60  all=0.94770 sep=0.92862 gain=+0.01908  | cl all=0.99891 sep=0.99540 gain=+0.00351  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.65  all=0.94770 sep=0.93101 gain=+0.01670  | cl all=0.99891 sep=0.99585 gain=+0.00306  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.70  all=0.94770 sep=0.93339 gain=+0.01431  | cl all=0.99891 sep=0.99630 gain=+0.00261  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.75  all=0.94770 sep=0.93577 gain=+0.01193  | cl all=0.99891 sep=0.99675 gain=+0.00216  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.80  all=0.94770 sep=0.93816 gain=+0.00954  | cl all=0.99891 sep=0.99720 gain=+0.00171  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.85  all=0.94770 sep=0.94054 gain=+0.00716  | cl all=0.99891 sep=0.99765 gain=+0.00126  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.90  all=0.94770 sep=0.94293 gain=+0.00477  | cl all=0.99891 sep=0.99810 gain=+0.00081  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.95  all=0.94770 sep=0.94532 gain=+0.00239  | cl all=0.99932 sep=0.99855 gain=+0.00077  PA=0.9477 PB=0.9477 regret=0.00000
+  w=0.99  all=0.94770 sep=0.94722 gain=+0.00048  | cl all=0.99971 sep=0.99891 gain=+0.00080  PA=0.9477 PB=0.9477 regret=0.00000
+n=6,p=0.1 breakpoints after [0.55, 0.85]
+  w=0.50  all=0.97103 sep=0.94572 gain=+0.02531  | cl all=0.99980 sep=0.99900 gain=+0.00080  PA=0.9645 PB=0.9776 regret=0.00000
+  w=0.55  all=0.97168 sep=0.95029 gain=+0.02139  | cl all=0.99980 sep=0.99900 gain=+0.00080  PA=0.9776 PB=0.9645 regret=0.00000
+  w=0.60  all=0.97234 sep=0.95486 gain=+0.01748  | cl all=0.99980 sep=0.99900 gain=+0.00080  PA=0.9776 PB=0.9645 regret=0.00000
+  w=0.65  all=0.97300 sep=0.95944 gain=+0.01356  | cl all=0.99980 sep=0.99900 gain=+0.00080  PA=0.9776 PB=0.9645 regret=0.00000
+  w=0.70  all=0.97365 sep=0.96401 gain=+0.00964  | cl all=0.99980 sep=0.99900 gain=+0.00080  PA=0.9776 PB=0.9645 regret=0.00000
+  w=0.75  all=0.97431 sep=0.96858 gain=+0.00573  | cl all=0.99980 sep=0.99900 gain=+0.00080  PA=0.9776 PB=0.9645 regret=0.00000
+  w=0.80  all=0.97496 sep=0.97315 gain=+0.00181  | cl all=0.99980 sep=0.99900 gain=+0.00080  PA=0.9776 PB=0.9645 regret=0.00000
+  w=0.85  all=0.97772 sep=0.97772 gain=+0.00000  | cl all=0.99980 sep=0.99900 gain=+0.00080  PA=0.9914 PB=0.9000 regret=0.00210
+  w=0.90  all=0.98230 sep=0.98230 gain=+0.00000  | cl all=0.99980 sep=0.99900 gain=+0.00080  PA=0.9914 PB=0.9000 regret=0.00602
+  w=0.95  all=0.98687 sep=0.98687 gain=+0.00000  | cl all=0.99985 sep=0.99941 gain=+0.00044  PA=0.9914 PB=0.9000 regret=0.00994
+  w=0.99  all=0.99053 sep=0.99053 gain=+0.00000  | cl all=0.99988 sep=0.99980 gain=+0.00008  PA=0.9914 PB=0.9000 regret=0.01307
+n=2,p=0.2 breakpoints after []
+  w=0.50  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.80000 sep=0.80000 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.55  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.80000 sep=0.80000 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.60  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.80000 sep=0.80000 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.65  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.80000 sep=0.80000 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.70  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.80000 sep=0.80000 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.75  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.80000 sep=0.80000 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.80  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.80000 sep=0.80000 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.85  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.81600 sep=0.80000 gain=+0.01600  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.90  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.86400 sep=0.80000 gain=+0.06400  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.95  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.91200 sep=0.80000 gain=+0.11200  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.99  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.95040 sep=0.80000 gain=+0.15040  PA=0.8000 PB=0.8000 regret=0.00000
+n=3,p=0.2 breakpoints after []
+  w=0.50  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.92800 sep=0.88000 gain=+0.04800  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.55  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.92800 sep=0.88800 gain=+0.04000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.60  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.92800 sep=0.89600 gain=+0.03200  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.65  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.92800 sep=0.90400 gain=+0.02400  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.70  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.92800 sep=0.91200 gain=+0.01600  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.75  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.92800 sep=0.92000 gain=+0.00800  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.80  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.92800 sep=0.92800 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.85  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.93600 sep=0.93600 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.90  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.94400 sep=0.94400 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.95  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.95200 sep=0.95200 gain=+0.00000  PA=0.8000 PB=0.8000 regret=0.00000
+  w=0.99  all=0.80000 sep=0.80000 gain=+0.00000  | cl all=0.98208 sep=0.95840 gain=+0.02368  PA=0.8000 PB=0.8000 regret=0.00000
+n=4,p=0.2 breakpoints after []
+  w=0.50  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.96960 sep=0.96000 gain=+0.00960  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.55  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.97120 sep=0.96000 gain=+0.01120  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.60  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.97280 sep=0.96000 gain=+0.01280  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.65  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.97440 sep=0.96000 gain=+0.01440  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.70  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.97600 sep=0.96000 gain=+0.01600  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.75  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.97760 sep=0.96000 gain=+0.01760  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.80  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.97920 sep=0.96000 gain=+0.01920  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.85  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.98080 sep=0.96320 gain=+0.01760  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.90  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.98240 sep=0.97280 gain=+0.00960  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.95  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.98400 sep=0.98240 gain=+0.00160  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.99  all=0.81920 sep=0.80000 gain=+0.01920  | cl all=0.99008 sep=0.99008 gain=+0.00000  PA=0.8192 PB=0.8192 regret=0.00000
+n=5,p=0.2 breakpoints after []
+  w=0.50  all=0.81920 sep=0.80960 gain=+0.00960  | cl all=0.99072 sep=0.97600 gain=+0.01472  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.55  all=0.81920 sep=0.81056 gain=+0.00864  | cl all=0.99072 sep=0.97760 gain=+0.01312  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.60  all=0.81920 sep=0.81152 gain=+0.00768  | cl all=0.99072 sep=0.97920 gain=+0.01152  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.65  all=0.81920 sep=0.81248 gain=+0.00672  | cl all=0.99072 sep=0.98080 gain=+0.00992  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.70  all=0.81920 sep=0.81344 gain=+0.00576  | cl all=0.99072 sep=0.98240 gain=+0.00832  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.75  all=0.81920 sep=0.81440 gain=+0.00480  | cl all=0.99072 sep=0.98400 gain=+0.00672  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.80  all=0.81920 sep=0.81536 gain=+0.00384  | cl all=0.99072 sep=0.98560 gain=+0.00512  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.85  all=0.81920 sep=0.81632 gain=+0.00288  | cl all=0.99136 sep=0.98720 gain=+0.00416  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.90  all=0.81920 sep=0.81728 gain=+0.00192  | cl all=0.99328 sep=0.98880 gain=+0.00448  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.95  all=0.81920 sep=0.81824 gain=+0.00096  | cl all=0.99520 sep=0.99040 gain=+0.00480  PA=0.8192 PB=0.8192 regret=0.00000
+  w=0.99  all=0.81920 sep=0.81901 gain=+0.00019  | cl all=0.99674 sep=0.99642 gain=+0.00032  PA=0.8192 PB=0.8192 regret=0.00000
+n=6,p=0.2 breakpoints after [0.55]
+  w=0.50  all=0.87104 sep=0.87104 gain=+0.00000  | cl all=0.99686 sep=0.99200 gain=+0.00486  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.55  all=0.87814 sep=0.87814 gain=+0.00000  | cl all=0.99686 sep=0.99200 gain=+0.00486  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.60  all=0.88525 sep=0.88525 gain=+0.00000  | cl all=0.99686 sep=0.99200 gain=+0.00486  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.65  all=0.89235 sep=0.89235 gain=+0.00000  | cl all=0.99686 sep=0.99200 gain=+0.00486  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.70  all=0.89946 sep=0.89946 gain=+0.00000  | cl all=0.99686 sep=0.99200 gain=+0.00486  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.75  all=0.90656 sep=0.90656 gain=+0.00000  | cl all=0.99686 sep=0.99200 gain=+0.00486  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.80  all=0.91366 sep=0.91366 gain=+0.00000  | cl all=0.99686 sep=0.99200 gain=+0.00486  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.85  all=0.92077 sep=0.92077 gain=+0.00000  | cl all=0.99718 sep=0.99264 gain=+0.00454  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.90  all=0.92787 sep=0.92787 gain=+0.00000  | cl all=0.99750 sep=0.99456 gain=+0.00294  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.95  all=0.93498 sep=0.93498 gain=+0.00000  | cl all=0.99782 sep=0.99648 gain=+0.00134  PA=0.9421 PB=0.8000 regret=0.00000
+  w=0.99  all=0.94066 sep=0.94066 gain=+0.00000  | cl all=0.99903 sep=0.99802 gain=+0.00101  PA=0.9421 PB=0.8000 regret=0.00000
+n=2,p=0.3 breakpoints after []
+  w=0.50  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.70000 sep=0.70000 gain=+0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.55  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.70000 sep=0.70000 gain=+0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.60  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.70000 sep=0.70000 gain=+0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.65  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.70000 sep=0.70000 gain=+0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.70  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.70000 sep=0.70000 gain=+0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.75  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.70000 sep=0.70000 gain=+0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.80  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.72800 sep=0.70000 gain=+0.02800  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.85  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.77350 sep=0.70000 gain=+0.07350  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.90  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.81900 sep=0.70000 gain=+0.11900  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.95  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.86450 sep=0.70000 gain=+0.16450  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.99  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.90090 sep=0.70000 gain=+0.20090  PA=0.7000 PB=0.7000 regret=0.00000
+n=3,p=0.3 breakpoints after []
+  w=0.50  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.84700 sep=0.80500 gain=+0.04200  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.55  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.84700 sep=0.81550 gain=+0.03150  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.60  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.84700 sep=0.82600 gain=+0.02100  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.65  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.84700 sep=0.83650 gain=+0.01050  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.70  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.84700 sep=0.84700 gain=-0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.75  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.85750 sep=0.85750 gain=-0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.80  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.86800 sep=0.86800 gain=-0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.85  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.87850 sep=0.87850 gain=-0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.90  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.88900 sep=0.88900 gain=-0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.95  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.92435 sep=0.89950 gain=+0.02485  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.99  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.96327 sep=0.90790 gain=+0.05537  PA=0.7000 PB=0.7000 regret=0.00000
+n=4,p=0.3 breakpoints after []
+  w=0.50  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.92260 sep=0.91000 gain=+0.01260  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.55  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.92575 sep=0.91000 gain=+0.01575  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.60  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.92890 sep=0.91000 gain=+0.01890  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.65  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.93205 sep=0.91000 gain=+0.02205  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.70  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.93520 sep=0.91000 gain=+0.02520  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.75  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.93835 sep=0.91000 gain=+0.02835  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.80  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.94150 sep=0.91840 gain=+0.02310  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.85  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.94465 sep=0.93205 gain=+0.01260  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.90  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.94780 sep=0.94570 gain=+0.00210  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.95  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.95935 sep=0.95935 gain=-0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.99  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.98198 sep=0.97027 gain=+0.01171  PA=0.7000 PB=0.7000 regret=0.00000
+n=5,p=0.3 breakpoints after []
+  w=0.50  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.96733 sep=0.94150 gain=+0.02583  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.55  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.96733 sep=0.94465 gain=+0.02268  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.60  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.96733 sep=0.94780 gain=+0.01953  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.65  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.96733 sep=0.95095 gain=+0.01638  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.70  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.96733 sep=0.95410 gain=+0.01323  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.75  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.96733 sep=0.95725 gain=+0.01008  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.80  all=0.70000 sep=0.70000 gain=+0.00000  | cl all=0.96985 sep=0.96040 gain=+0.00945  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.85  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.97394 sep=0.96355 gain=+0.01039  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.90  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.97804 sep=0.96670 gain=+0.01134  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.95  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.98213 sep=0.97730 gain=+0.00483  PA=0.7000 PB=0.7000 regret=0.00000
+  w=0.99  all=0.70000 sep=0.70000 gain=-0.00000  | cl all=0.98898 sep=0.98898 gain=-0.00000  PA=0.7000 PB=0.7000 regret=0.00000
+n=6,p=0.3 breakpoints after [0.55]
+  w=0.50  all=0.76846 sep=0.76846 gain=-0.00000  | cl all=0.98453 sep=0.97300 gain=+0.01153  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.55  all=0.77531 sep=0.77531 gain=-0.00000  | cl all=0.98453 sep=0.97300 gain=+0.01153  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.60  all=0.78215 sep=0.78215 gain=-0.00000  | cl all=0.98453 sep=0.97300 gain=+0.01153  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.65  all=0.78900 sep=0.78900 gain=-0.00000  | cl all=0.98453 sep=0.97300 gain=+0.01153  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.70  all=0.79584 sep=0.79584 gain=-0.00000  | cl all=0.98453 sep=0.97300 gain=+0.01153  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.75  all=0.80269 sep=0.80269 gain=-0.00000  | cl all=0.98547 sep=0.97300 gain=+0.01247  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.80  all=0.80954 sep=0.80954 gain=+0.00000  | cl all=0.98642 sep=0.97552 gain=+0.01090  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.85  all=0.81638 sep=0.81638 gain=-0.00000  | cl all=0.98736 sep=0.97962 gain=+0.00775  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.90  all=0.82323 sep=0.82323 gain=-0.00000  | cl all=0.98831 sep=0.98371 gain=+0.00460  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.95  all=0.83007 sep=0.83007 gain=-0.00000  | cl all=0.99149 sep=0.98781 gain=+0.00369  PA=0.8369 PB=0.7000 regret=0.00000
+  w=0.99  all=0.83555 sep=0.83555 gain=-0.00000  | cl all=0.99499 sep=0.99459 gain=+0.00040  PA=0.8369 PB=0.7000 regret=0.00000

@@ -1,0 +1,249 @@
+{
+ "created_utc": "2026-10-23T17:40:23.296199",
+ "backend": "ibm_fez",
+ "versions": {
+  "qiskit": "2.6.1",
+  "qiskit_aer": "0.18.0",
+  "qiskit_ibm_runtime": "0.51.0"
+ },
+ "layout": [
+  131,
+  130,
+  129,
+  132,
+  138,
+  151,
+  118,
+  133
+ ],
+ "two_qubit_gates": [
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  26,
+  0,
+  0
+ ],
+ "shots": 4000,
+ "pilot_shots": 1000,
+ "circuit_names": [
+  "main_B_not_A/A/X",
+  "main_B_not_A/A/Y",
+  "main_B_not_A/A/Z",
+  "main_B_not_A/B/X",
+  "main_B_not_A/B/Y",
+  "main_B_not_A/B/Z",
+  "both/A/X",
+  "both/A/Y",
+  "both/A/Z",
+  "both/B/X",
+  "both/B/Y",
+  "both/B/Z",
+  "neither/A/X",
+  "neither/A/Y",
+  "neither/A/Z",
+  "neither/B/X",
+  "neither/B/Y",
+  "neither/B/Z",
+  "calib/0",
+  "calib/1"
+ ],
+ "qpy_sha256": "9d6dd909d7bc5c397dcca6aab27d84753361c9052e948ca3e83abbeb54ff839b",
+ "plan": {
+  "adj": [
+   90,
+   165,
+   66,
+   129,
+   33,
+   146,
+   5,
+   42
+  ],
+  "edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    7
+   ]
+  ],
+  "transpile_seed": 1,
+  "regions": {
+   "main_B_not_A": [
+    2,
+    3,
+    6,
+    7
+   ],
+   "both": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "neither": [
+    3,
+    4,
+    5,
+    7
+   ]
+  },
+  "correlators": {
+   "main_B_not_A/A": {
+    "X": {
+     "sign": 1,
+     "pauli": "XIXZIIII",
+     "inside_region": false
+    },
+    "Z": {
+     "sign": 1,
+     "pauli": "ZIIXIIIZ",
+     "inside_region": true
+    },
+    "Y": {
+     "sign": 1,
+     "pauli": "YIIYIIZI",
+     "inside_region": false
+    }
+   },
+   "main_B_not_A/B": {
+    "Z": {
+     "sign": 1,
+     "pauli": "IZXIIIZI",
+     "inside_region": true
+    },
+    "X": {
+     "sign": 1,
+     "pauli": "IXYYIIZX",
+     "inside_region": true
+    },
+    "Y": {
+     "sign": -1,
+     "pauli": "IYZYIIIX",
+     "inside_region": true
+    }
+   },
+   "both/A": {
+    "X": {
+     "sign": 1,
+     "pauli": "XIXZZIII",
+     "inside_region": true
+    },
+    "Z": {
+     "sign": 1,
+     "pauli": "ZIIIXZII",
+     "inside_region": true
+    },
+    "Y": {
+     "sign": 1,
+     "pauli": "YIXZYZII",
+     "inside_region": true
+    }
+   },
+   "both/B": {
+    "Z": {
+     "sign": 1,
+     "pauli": "IZIXYYII",
+     "inside_region": true
+    },
+    "X": {
+     "sign": 1,
+     "pauli": "IXZXIZII",
+     "inside_region": true
+    },
+    "Y": {
+     "sign": -1,
+     "pauli": "IYZIYXII",
+     "inside_region": true
+    }
+   },
+   "neither/A": {
+    "X": {
+     "sign": 1,
+     "pauli": "XIIZZIII",
+     "inside_region": false
+    },
+    "Z": {
+     "sign": 1,
+     "pauli": "ZIIXIIIZ",
+     "inside_region": true
+    },
+    "Y": {
+     "sign": 1,
+     "pauli": "YIIYIXII",
+     "inside_region": false
+    }
+   },
+   "neither/B": {
+    "Z": {
+     "sign": 1,
+     "pauli": "IZIIZXIZ",
+     "inside_region": true
+    },
+    "X": {
+     "sign": 1,
+     "pauli": "IXIXIZII",
+     "inside_region": false
+    },
+    "Y": {
+     "sign": -1,
+     "pauli": "IYIIYXII",
+     "inside_region": false
+    }
+   }
+  }
+ }
+}

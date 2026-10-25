@@ -1,0 +1,10 @@
+# Python 3.12.3.
+# Offline reproduction (reproduce.py, phase106, phase107 Test A):
+numpy==2.4.6
+numba==0.68.0
+networkx==3.6.1
+# Circuit selection and simulation for the hardware test (testB_select.py, testB_sim.py), run locally:
+#   qiskit==2.0.0, qiskit-aer==0.17.2, qiskit-ibm-runtime==0.37.0
+# The hardware notebook (phase107_testB_hardware_run.ipynb) ran on Colab with the versions recorded in
+# phase107/IBM run data/testB_manifest.json; its compiled circuits (QPY) need at least this Qiskit to load:
+#   qiskit==2.6.1, qiskit-aer==0.18.0, qiskit-ibm-runtime==0.51.0

@@ -1,0 +1,6 @@
+# keep hashed records byte-identical on every platform
+phase106/DESIGN.md -text
+phase107/DESIGN.md -text
+phase107/TESTB_ADDENDUM.md -text
+*.qpy binary
+*.npz binary

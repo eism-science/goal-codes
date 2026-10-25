@@ -1,0 +1,337 @@
+{
+ "adj": [
+  90,
+  165,
+  66,
+  129,
+  33,
+  146,
+  5,
+  42
+ ],
+ "edges": [
+  [
+   0,
+   1
+  ],
+  [
+   0,
+   3
+  ],
+  [
+   0,
+   4
+  ],
+  [
+   0,
+   6
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   1,
+   5
+  ],
+  [
+   1,
+   7
+  ],
+  [
+   2,
+   6
+  ],
+  [
+   3,
+   7
+  ],
+  [
+   4,
+   5
+  ],
+  [
+   5,
+   7
+  ]
+ ],
+ "transpile_seed": 1,
+ "two_qubit_gates": 20,
+ "depth": 21,
+ "regions": {
+  "main_B_not_A": [
+   2,
+   3,
+   6,
+   7
+  ],
+  "both": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "neither": [
+   3,
+   4,
+   5,
+   7
+  ]
+ },
+ "region_table": [
+  {
+   "region": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    2,
+    3,
+    4,
+    6
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    2,
+    3,
+    4,
+    7
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    2,
+    3,
+    5,
+    7
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    2,
+    3,
+    6,
+    7
+   ],
+   "I_A": 1,
+   "I_B": 2
+  },
+  {
+   "region": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "I_A": 1,
+   "I_B": 2
+  },
+  {
+   "region": [
+    2,
+    4,
+    5,
+    7
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    2,
+    4,
+    6,
+    7
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    2,
+    5,
+    6,
+    7
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    3,
+    4,
+    5,
+    7
+   ],
+   "I_A": 1,
+   "I_B": 1
+  },
+  {
+   "region": [
+    3,
+    4,
+    6,
+    7
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "I_A": 2,
+   "I_B": 2
+  },
+  {
+   "region": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "I_A": 2,
+   "I_B": 2
+  }
+ ],
+ "correlators": {
+  "main_B_not_A/A": {
+   "X": {
+    "sign": 0.9999999999999991,
+    "pauli": "XIXZIIII",
+    "inside_region": false
+   },
+   "Z": {
+    "sign": 0.9999999999999991,
+    "pauli": "ZIIXIIIZ",
+    "inside_region": true
+   },
+   "Y": {
+    "sign": 0.9999999999999991,
+    "pauli": "YIIYIIZI",
+    "inside_region": false
+   }
+  },
+  "main_B_not_A/B": {
+   "Z": {
+    "sign": 0.9999999999999991,
+    "pauli": "IZXIIIZI",
+    "inside_region": true
+   },
+   "X": {
+    "sign": 0.9999999999999991,
+    "pauli": "IXYYIIZX",
+    "inside_region": true
+   },
+   "Y": {
+    "sign": -0.9999999999999991,
+    "pauli": "IYZYIIIX",
+    "inside_region": true
+   }
+  },
+  "both/A": {
+   "X": {
+    "sign": 0.9999999999999991,
+    "pauli": "XIXZZIII",
+    "inside_region": true
+   },
+   "Z": {
+    "sign": 0.9999999999999991,
+    "pauli": "ZIIIXZII",
+    "inside_region": true
+   },
+   "Y": {
+    "sign": 0.9999999999999991,
+    "pauli": "YIXZYZII",
+    "inside_region": true
+   }
+  },
+  "both/B": {
+   "Z": {
+    "sign": 0.9999999999999991,
+    "pauli": "IZIXYYII",
+    "inside_region": true
+   },
+   "X": {
+    "sign": 0.9999999999999991,
+    "pauli": "IXZXIZII",
+    "inside_region": true
+   },
+   "Y": {
+    "sign": -0.9999999999999991,
+    "pauli": "IYZIYXII",
+    "inside_region": true
+   }
+  },
+  "neither/A": {
+   "X": {
+    "sign": 0.9999999999999991,
+    "pauli": "XIIZZIII",
+    "inside_region": false
+   },
+   "Z": {
+    "sign": 0.9999999999999991,
+    "pauli": "ZIIXIIIZ",
+    "inside_region": true
+   },
+   "Y": {
+    "sign": 0.9999999999999991,
+    "pauli": "YIIYIXII",
+    "inside_region": false
+   }
+  },
+  "neither/B": {
+   "Z": {
+    "sign": 0.9999999999999991,
+    "pauli": "IZIIZXIZ",
+    "inside_region": true
+   },
+   "X": {
+    "sign": 0.9999999999999991,
+    "pauli": "IXIXIZII",
+    "inside_region": false
+   },
+   "Y": {
+    "sign": -0.9999999999999991,
+    "pauli": "IYIIYXII",
+    "inside_region": false
+   }
+  }
+ }
+}

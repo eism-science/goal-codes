@@ -1,0 +1,17 @@
+Design documents, logs, results and data in this repository
+
+Copyright (c) 2026 Luis Razo
+
+The design documents and addendum (DESIGN.md, TESTB_ADDENDUM.md), run logs (RUNLOG.md), results summaries
+(RESULTS.md), results and output files (*.json, *.txt, *.npz in phase106/ and phase107/), and the hardware run data
+(phase107/IBM run data/: raw counts, analysis, manifest and compiled circuits) are licensed under the Creative
+Commons Attribution 4.0 International licence (CC BY 4.0):
+
+    https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt them for any purpose, provided you give appropriate credit, provide a link to the licence
+and indicate if changes were made.
+
+The device calibration snapshot (data/iteration_depth_30/ibm_fez/calibration_snapshot.json) is backend calibration
+data for IBM's ibm_fez processor, retrieved through IBM Quantum on 2026-05-25. It is included unmodified, for
+reproducibility only, and is not covered by the licence above.
