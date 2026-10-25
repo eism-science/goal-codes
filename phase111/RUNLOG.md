@@ -21,3 +21,6 @@ Times are local (Barcelona, UTC+1). Entries are added in order and never edited;
   any checkout. A private working copy of this phase exists outside this repository; its line endings may differ,
   so only the files here are authoritative.
 - Deadline: the circuits are run within 72 hours of compilation, by 2026-10-28 16:07.
+- 18:10. `FREEZE_MANIFEST.txt` stamped with OpenTimestamps (`FREEZE_MANIFEST.txt.ots`, four calendars, pending
+  Bitcoin confirmation), after the freeze commit 3eacc77. The confirmed proof is checked before the run and the result
+  recorded in `TIMESTAMP_CHECK.json`.
