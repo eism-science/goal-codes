@@ -1,0 +1,612 @@
+{
+ "backend": "ibm_fez",
+ "live_target": true,
+ "calibration_snapshot": {
+  "file": "p111_backend_snapshot.json",
+  "sha256": "3dc716276b39ee0308f4f8dd83be9dfbaf29455514d14aa96ceba0d57e80fce7",
+  "last_update_date": "2026-10-25 14:45:43+01:00"
+ },
+ "target": {
+  "file": "p111_target.pkl",
+  "sha256": "350010379c717f3a5b5ff22643c3372f9dd36e0c4e0308478aa992e7936c6dbc"
+ },
+ "pairs": {
+  "main_B_not_A/B": {
+   "layout_rank": 0,
+   "initial_layout": [
+    22,
+    21,
+    3,
+    23,
+    36,
+    20,
+    16,
+    24
+   ],
+   "layout_seed": 2,
+   "connected": true,
+   "phys_region": [
+    3,
+    16,
+    24,
+    23
+   ],
+   "s": 0,
+   "decoder_seed": 0,
+   "correction": "",
+   "ideal_logical": {
+    "X": 0.9999999999999973,
+    "Y": -0.9999999999999973,
+    "Z": 0.9999999999999987
+   },
+   "two_qubit_gates": 45,
+   "two_qubit_prep": 38,
+   "depth": 58,
+   "layout_final": [
+    20,
+    21,
+    3,
+    16,
+    36,
+    22,
+    24,
+    23
+   ],
+   "ref_phys": 21,
+   "out_phys": 16,
+   "primary": true,
+   "control": false,
+   "status": "built",
+   "checks": {
+    "XX": {
+     "failures": [],
+     "V2_exact": 1.0000000000000009
+    },
+    "YY": {
+     "failures": [],
+     "V2_exact": -1.0000000000000036
+    },
+    "ZZ": {
+     "failures": [],
+     "V2_exact": 1.0000000000000018
+    }
+   },
+   "ideal_F_compiled": 1.0000000000000016,
+   "physical_pair": "21-16"
+  },
+  "main_B_not_A/A": {
+   "layout_rank": 0,
+   "initial_layout": [
+    22,
+    21,
+    3,
+    23,
+    36,
+    20,
+    16,
+    24
+   ],
+   "layout_seed": 2,
+   "connected": true,
+   "phys_region": [
+    3,
+    16,
+    24,
+    23
+   ],
+   "s": 0,
+   "decoder_seed": 0,
+   "correction": "",
+   "ideal_logical": {
+    "X": 0.0,
+    "Y": 0.0,
+    "Z": 0.9999999999999996
+   },
+   "two_qubit_gates": 39,
+   "two_qubit_prep": 38,
+   "depth": 47,
+   "layout_final": [
+    20,
+    21,
+    3,
+    16,
+    36,
+    22,
+    24,
+    23
+   ],
+   "ref_phys": 20,
+   "out_phys": 16,
+   "primary": true,
+   "control": true,
+   "status": "built",
+   "checks": {
+    "XX": {
+     "failures": [],
+     "V2_exact": 0.0
+    },
+    "YY": {
+     "failures": [],
+     "V2_exact": 0.0
+    },
+    "ZZ": {
+     "failures": [],
+     "V2_exact": 1.0000000000000033
+    }
+   },
+   "ideal_F_compiled": 0.5000000000000009,
+   "physical_pair": "20-16"
+  },
+  "both/A": {
+   "layout_rank": 0,
+   "initial_layout": [
+    4,
+    5,
+    1,
+    2,
+    3,
+    16,
+    0,
+    23
+   ],
+   "layout_seed": 0,
+   "connected": true,
+   "phys_region": [
+    2,
+    4,
+    5,
+    3
+   ],
+   "s": 1,
+   "decoder_seed": 0,
+   "correction": "",
+   "ideal_logical": {
+    "X": 0.9999999999999973,
+    "Y": -0.9999999999999973,
+    "Z": 0.9999999999999987
+   },
+   "two_qubit_gates": 40,
+   "two_qubit_prep": 31,
+   "depth": 62,
+   "layout_final": [
+    0,
+    23,
+    2,
+    4,
+    5,
+    3,
+    1,
+    16
+   ],
+   "ref_phys": 0,
+   "out_phys": 4,
+   "primary": true,
+   "control": false,
+   "status": "built",
+   "checks": {
+    "XX": {
+     "failures": [],
+     "V2_exact": 1.000000000000002
+    },
+    "YY": {
+     "failures": [],
+     "V2_exact": -1.000000000000002
+    },
+    "ZZ": {
+     "failures": [],
+     "V2_exact": 1.0000000000000016
+    }
+   },
+   "ideal_F_compiled": 1.0000000000000013,
+   "physical_pair": "0-4"
+  },
+  "both/B": {
+   "layout_rank": 0,
+   "initial_layout": [
+    4,
+    5,
+    1,
+    2,
+    3,
+    16,
+    0,
+    23
+   ],
+   "layout_seed": 0,
+   "connected": true,
+   "phys_region": [
+    2,
+    4,
+    5,
+    3
+   ],
+   "s": 0,
+   "decoder_seed": 0,
+   "correction": "",
+   "ideal_logical": {
+    "X": 0.9999999999999973,
+    "Y": -0.9999999999999973,
+    "Z": 0.9999999999999987
+   },
+   "two_qubit_gates": 38,
+   "two_qubit_prep": 31,
+   "depth": 63,
+   "layout_final": [
+    0,
+    23,
+    2,
+    4,
+    5,
+    3,
+    1,
+    16
+   ],
+   "ref_phys": 23,
+   "out_phys": 4,
+   "primary": false,
+   "control": false,
+   "status": "built",
+   "checks": {
+    "XX": {
+     "failures": [],
+     "V2_exact": 1.0000000000000033
+    },
+    "YY": {
+     "failures": [],
+     "V2_exact": -1.0000000000000022
+    },
+    "ZZ": {
+     "failures": [],
+     "V2_exact": 1.000000000000002
+    }
+   },
+   "ideal_F_compiled": 1.000000000000002,
+   "physical_pair": "23-4"
+  },
+  "neither/A": {
+   "layout_rank": 0,
+   "initial_layout": [
+    36,
+    21,
+    20,
+    40,
+    43,
+    42,
+    22,
+    41
+   ],
+   "layout_seed": 0,
+   "connected": true,
+   "phys_region": [
+    40,
+    43,
+    42,
+    41
+   ],
+   "s": 0,
+   "decoder_seed": 0,
+   "correction": "",
+   "ideal_logical": {
+    "X": 0.0,
+    "Y": 0.0,
+    "Z": 0.9999999999999996
+   },
+   "two_qubit_gates": 31,
+   "two_qubit_prep": 30,
+   "depth": 38,
+   "layout_final": [
+    36,
+    22,
+    20,
+    40,
+    43,
+    42,
+    21,
+    41
+   ],
+   "ref_phys": 36,
+   "out_phys": 40,
+   "primary": false,
+   "control": true,
+   "status": "built",
+   "checks": {
+    "XX": {
+     "failures": [],
+     "V2_exact": 0.0
+    },
+    "YY": {
+     "failures": [],
+     "V2_exact": 0.0
+    },
+    "ZZ": {
+     "failures": [],
+     "V2_exact": 1.0000000000000002
+    }
+   },
+   "ideal_F_compiled": 0.5,
+   "physical_pair": "36-40"
+  },
+  "neither/B": {
+   "layout_rank": 0,
+   "initial_layout": [
+    36,
+    21,
+    20,
+    40,
+    43,
+    42,
+    22,
+    41
+   ],
+   "layout_seed": 0,
+   "connected": true,
+   "phys_region": [
+    40,
+    43,
+    42,
+    41
+   ],
+   "s": 0,
+   "decoder_seed": 0,
+   "correction": "",
+   "ideal_logical": {
+    "X": 0.0,
+    "Y": 0.0,
+    "Z": 0.9999999999999991
+   },
+   "two_qubit_gates": 32,
+   "two_qubit_prep": 30,
+   "depth": 41,
+   "layout_final": [
+    36,
+    22,
+    20,
+    40,
+    43,
+    42,
+    21,
+    41
+   ],
+   "ref_phys": 22,
+   "out_phys": 43,
+   "primary": false,
+   "control": true,
+   "status": "built",
+   "checks": {
+    "XX": {
+     "failures": [],
+     "V2_exact": 0.0
+    },
+    "YY": {
+     "failures": [],
+     "V2_exact": 0.0
+    },
+    "ZZ": {
+     "failures": [],
+     "V2_exact": 1.0000000000000029
+    }
+   },
+   "ideal_F_compiled": 0.5000000000000007,
+   "physical_pair": "22-43"
+  }
+ },
+ "versions": {
+  "python": "3.12.3",
+  "qiskit": "2.6.1",
+  "qiskit_aer": "0.18.0",
+  "qiskit_ibm_runtime": "0.51.0",
+  "numpy": "2.5.4"
+ },
+ "baselines": {
+  "21-16": {
+   "path": [
+    21,
+    22,
+    23,
+    16
+   ],
+   "swaps": 2,
+   "two_qubit_gates": 7,
+   "checks": {
+    "XX": {
+     "exact": 1.0000000000000013,
+     "ok": true
+    },
+    "YY": {
+     "exact": -1.000000000000001,
+     "ok": true
+    },
+    "ZZ": {
+     "exact": 1.0000000000000004,
+     "ok": true
+    }
+   }
+  },
+  "20-16": {
+   "path": [
+    20,
+    21,
+    22,
+    23,
+    16
+   ],
+   "swaps": 3,
+   "two_qubit_gates": 10,
+   "checks": {
+    "XX": {
+     "exact": 1.0000000000000013,
+     "ok": true
+    },
+    "YY": {
+     "exact": -1.0000000000000004,
+     "ok": true
+    },
+    "ZZ": {
+     "exact": 1.0000000000000013,
+     "ok": true
+    }
+   }
+  },
+  "0-4": {
+   "path": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "swaps": 3,
+   "two_qubit_gates": 10,
+   "checks": {
+    "XX": {
+     "exact": 1.0000000000000022,
+     "ok": true
+    },
+    "YY": {
+     "exact": -1.0000000000000004,
+     "ok": true
+    },
+    "ZZ": {
+     "exact": 1.0000000000000004,
+     "ok": true
+    }
+   }
+  },
+  "23-4": {
+   "path": [
+    23,
+    16,
+    3,
+    4
+   ],
+   "swaps": 2,
+   "two_qubit_gates": 7,
+   "checks": {
+    "XX": {
+     "exact": 1.000000000000002,
+     "ok": true
+    },
+    "YY": {
+     "exact": -1.000000000000001,
+     "ok": true
+    },
+    "ZZ": {
+     "exact": 1.000000000000001,
+     "ok": true
+    }
+   }
+  },
+  "36-40": {
+   "path": [
+    36,
+    41,
+    40
+   ],
+   "swaps": 1,
+   "two_qubit_gates": 4,
+   "checks": {
+    "XX": {
+     "exact": 1.0000000000000009,
+     "ok": true
+    },
+    "YY": {
+     "exact": -1.000000000000001,
+     "ok": true
+    },
+    "ZZ": {
+     "exact": 1.0000000000000004,
+     "ok": true
+    }
+   }
+  },
+  "22-43": {
+   "path": [
+    22,
+    21,
+    36,
+    41,
+    42,
+    43
+   ],
+   "swaps": 4,
+   "two_qubit_gates": 13,
+   "checks": {
+    "XX": {
+     "exact": 1.0000000000000004,
+     "ok": true
+    },
+    "YY": {
+     "exact": -1.0000000000000004,
+     "ok": true
+    },
+    "ZZ": {
+     "exact": 1.0000000000000004,
+     "ok": true
+    }
+   }
+  }
+ },
+ "circuit_names": [
+  "main_B_not_A/B/XX",
+  "main_B_not_A/B/YY",
+  "main_B_not_A/B/ZZ",
+  "main_B_not_A/A/XX",
+  "main_B_not_A/A/YY",
+  "main_B_not_A/A/ZZ",
+  "both/A/XX",
+  "both/A/YY",
+  "both/A/ZZ",
+  "both/B/XX",
+  "both/B/YY",
+  "both/B/ZZ",
+  "neither/A/XX",
+  "neither/A/YY",
+  "neither/A/ZZ",
+  "neither/B/XX",
+  "neither/B/YY",
+  "neither/B/ZZ",
+  "calib/21-16/00",
+  "calib/21-16/01",
+  "calib/21-16/10",
+  "calib/21-16/11",
+  "baseline/21-16/XX",
+  "baseline/21-16/YY",
+  "baseline/21-16/ZZ",
+  "calib/20-16/00",
+  "calib/20-16/01",
+  "calib/20-16/10",
+  "calib/20-16/11",
+  "baseline/20-16/XX",
+  "baseline/20-16/YY",
+  "baseline/20-16/ZZ",
+  "calib/0-4/00",
+  "calib/0-4/01",
+  "calib/0-4/10",
+  "calib/0-4/11",
+  "baseline/0-4/XX",
+  "baseline/0-4/YY",
+  "baseline/0-4/ZZ",
+  "calib/23-4/00",
+  "calib/23-4/01",
+  "calib/23-4/10",
+  "calib/23-4/11",
+  "baseline/23-4/XX",
+  "baseline/23-4/YY",
+  "baseline/23-4/ZZ",
+  "calib/36-40/00",
+  "calib/36-40/01",
+  "calib/36-40/10",
+  "calib/36-40/11",
+  "baseline/36-40/XX",
+  "baseline/36-40/YY",
+  "baseline/36-40/ZZ",
+  "calib/22-43/00",
+  "calib/22-43/01",
+  "calib/22-43/10",
+  "calib/22-43/11",
+  "baseline/22-43/XX",
+  "baseline/22-43/YY",
+  "baseline/22-43/ZZ"
+ ],
+ "qpy_sha256": "0a1011d93f039431684c49d2bd408312b329c8196007a7ee57eefcb831e71eb0"
+}

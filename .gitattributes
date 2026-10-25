@@ -6,3 +6,5 @@ phase107/TESTB_ADDENDUM.md -text
 *.npz binary
 phase111/** -text
 *.pkl binary
+testB_plan.json -text
+testB_manifest.json -text

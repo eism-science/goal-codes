@@ -1,0 +1,36 @@
+# Phase 111 freeze manifest, 2026-10-25. Format: sha256, two spaces, file name as used by the run notebook
+# (all files in one folder). Repository paths in eism-science/goal-codes:
+#   DESIGN.md: phase111/DESIGN.md
+#   p111_build.py: phase111/p111_build.py
+#   p111_verify.py: phase111/p111_verify.py
+#   p111_power.py: phase111/p111_power.py
+#   p111_analyse.py: phase111/p111_analyse.py
+#   p111_runner.py: phase111/p111_runner.py
+#   phase111_hardware_run.ipynb: phase111/phase111_hardware_run.ipynb
+#   p111_plan.json: phase111/p111_plan.json
+#   p111_candidates.json: phase111/p111_candidates.json
+#   p111_circuits.qpy: phase111/p111_circuits.qpy
+#   p111_target.pkl: phase111/p111_target.pkl
+#   p111_verify_report.json: phase111/p111_verify_report.json
+#   p111_power.json: phase111/p111_power.json
+#   p111_backend_snapshot.json: phase111/p111_backend_snapshot.json
+#   testB_transpiled.qpy: phase107/IBM run data/testB_transpiled.qpy
+#   testB_manifest.json: phase107/IBM run data/testB_manifest.json
+#   testB_plan.json: phase107/testB_plan.json
+710290011395eea7a65591cfd424008e0cdb52efd4816256df2c7e61e63b2079  DESIGN.md
+cea982489b6ecebbc7e94459d55d9cea179f94bc2035f935271b6c5713070e3e  p111_build.py
+b12be06aa3d52d961cd0a12921cfba93190d6936e1deb3c405c72665682c7562  p111_verify.py
+16d30764c29ee2b0f54443fd43124f8d61f7496f9fa619970bf2e7b730eceb0c  p111_power.py
+fd43dc5baf4d7ce574553ce8203a71f7022a6b19796fc38369d9f44cedbd274f  p111_analyse.py
+2bdb5339c7ea26838d8c52c43e8789073c9e1ca878a8c5a3c4deff451585d8ed  p111_runner.py
+b0aa43c8fd68f828084fd3257ae44c2fa1bac2eb5426f77c727b3c463634d439  phase111_hardware_run.ipynb
+6832d07dd4822d15cf3663e7eb5c8bb843c37621a95a9c3a6c2790c8b9e88cf9  p111_plan.json
+d62f831fc1cdd9dfcda57f0a9656d6439e9a36a6e54a3abffb18c48e8333fa2f  p111_candidates.json
+0a1011d93f039431684c49d2bd408312b329c8196007a7ee57eefcb831e71eb0  p111_circuits.qpy
+350010379c717f3a5b5ff22643c3372f9dd36e0c4e0308478aa992e7936c6dbc  p111_target.pkl
+ba03531e00e23fb7f587692764ba965d3db02e4e3576dec1090acc2c59dced5d  p111_verify_report.json
+360beca81ac165acee1cfcf9ef15a2b7b897923e0e1b2b63bbafdded452a8ade  p111_power.json
+3dc716276b39ee0308f4f8dd83be9dfbaf29455514d14aa96ceba0d57e80fce7  p111_backend_snapshot.json
+9d6dd909d7bc5c397dcca6aab27d84753361c9052e948ca3e83abbeb54ff839b  testB_transpiled.qpy
+9337db5993ba6289183895fbdf13edec0d1ee4568d394f00c4c8151048c5a262  testB_manifest.json
+fef6c19beef9bb2f78cfcba2dbbdb9c4589cea3b6bff3cc976e5ececa99f27f2  testB_plan.json

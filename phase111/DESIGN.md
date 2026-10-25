@@ -1,12 +1,13 @@
 # Phase 111 design: replication and decoded recovery on hardware
 
 **Author:** Luis Razo (EISM, Barcelona). Drafted with AI assistance (Claude) under the author's direction.
-**Status:** DRAFT 5, 2026-10-25. Draft 2 adopted all six fixes of a first review of the design (every review in this phase was by ChatGPT, directed and assessed by the author); draft 3 aligned the text with
+**Status:** FROZEN, 2026-10-25, with the live build described under "Frozen build" (the timestamp of
+`FREEZE_MANIFEST.txt` is recorded in `RUNLOG.md`). Draft 2 adopted all six fixes of a first review of the design (every review in this phase was by ChatGPT, directed and assessed by the author); draft 3 aligned the text with
 the built and tested procedure (placement rule, shared layout per region, routed baseline, software versions, power
 result) and added stated limitations; draft 4 adopted the blocking fixes of a second review, of the code
 (enforced checks, a separate verifier, power check on the live calibration, jobs bound to the frozen manifest), and
 the fixes of its follow-up (checks and power against the saved compilation target, run logic in a hashed module,
-timestamp record, submitted-circuit check, Test B circuit identity). Not frozen.
+timestamp record, submitted-circuit check, Test B circuit identity).
 Freezing happens after the circuits are built and verified (Part C): the design and every artifact it fixes are
 listed with their SHA-256 in `FREEZE_MANIFEST.txt`, committed to the code repository, and the manifest is
 timestamped with OpenTimestamps before any QPU job. Changes after freezing are logged in `RUNLOG.md` as amendments,
@@ -250,6 +251,13 @@ run.
   backend's calibration (`p111_backend_snapshot.json`). Its circuits may differ from the development build's; they
   must pass V1–V3 and the power rule (on the live calibration) before freezing, and only they are run; the notebook
   refuses a development build.
+- **Frozen build, 2026-10-25.** Compiled at 16:07 (UTC+1) against the live ibm_fez target, calibration of
+  2026-10-25 14:45 (UTC+1). It selected the same layouts, decoders, output positions and two-qubit gate counts as the
+  development build; the compiled preparation of the both region differs in single-qubit gates (six circuits). All
+  six pairs pass V1–V3, all baselines pass their exact check, and `p111_verify.py` passes on the written files (60 circuits; the
+  20 archived Test B circuits identified). Power check on that calibration: expected F 0.812 (main/B), 0.466
+  (main/A), 0.874 (both/A); expected z of D1–D3 at 4,000 shots 68.8, 98.6 and 46.5, so 4,000 shots. To be run
+  within 72 hours of compilation.
 - SamplerV2 is deprecated in qiskit-ibm-runtime 0.51.0 but available; its availability is checked before the run.
 
 ## Hardware budget (provisional)

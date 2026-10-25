@@ -8,3 +8,5 @@ networkx==3.6.1
 # The hardware notebook (phase107_testB_hardware_run.ipynb) ran on Colab with the versions recorded in
 # phase107/IBM run data/testB_manifest.json; its compiled circuits (QPY) need at least this Qiskit to load:
 #   qiskit==2.6.1, qiskit-aer==0.18.0, qiskit-ibm-runtime==0.51.0
+# Phase 111 (phase111/): built, verified and tested locally with these (the run notebook installs the same qiskit and runtime on Colab):
+#   qiskit==2.6.1, qiskit-aer==0.18.0, qiskit-ibm-runtime==0.51.0, numpy==2.5.4, networkx==3.6.1

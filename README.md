@@ -28,6 +28,7 @@ also checks the SHA-256 of the design documents and of the compiled hardware cir
 | `phase106/` | Identical erasure (paper Section 3): exhaustive search (`p106.py`), stored code profiles (`profiles.json`), results, the exploratory n = 7 search and a random-graph check. |
 | `phase107/` | Uneven and correlated erasure (Section 4, `p107.py`, stored code tables `tables_cache.npz`), and the hardware test (Section 5): circuit selection (`testB_select.py`), simulation (`testB_sim.py`), the hardware notebook and `IBM run data/` (raw counts, analysis, manifest, compiled circuits as QPY). |
 | `data/` | The ibm_fez calibration snapshot (2026-05-25) from which the readout-weighted erasure model is built. |
+| `phase111/` | Replication of the hardware test and a decoded-recovery test, frozen before running: design (`DESIGN.md`), circuit build (`p111_build.py`), independent checks (`p111_verify.py`), power check (`p111_power.py`), analysis (`p111_analyse.py`), run logic (`p111_runner.py`) and notebook, offline tests, and the built circuits with their plan, verification report and the ibm_fez calibration they were compiled for. `p111_target.pkl` is a Python pickle; the scripts check its SHA-256 against the plan before loading it, and it should not be loaded from any other source. |
 
 To rerun from scratch rather than from stored data:
 
