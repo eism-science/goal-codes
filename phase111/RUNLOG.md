@@ -26,3 +26,15 @@ Times are local (Barcelona, UTC+1). Entries are added in order and never edited;
   recorded in `TIMESTAMP_CHECK.json`.
 - 19:56. Proof upgraded: Bitcoin block 973103 (2026-10-25 19:00:31, 18:00:31 UTC); its merkle root equals the
   proof's commitment on two block explorers. Recorded in `TIMESTAMP_CHECK.json`. No QPU job had been submitted.
+- 20:11–20:14. Run on ibm_fez from the frozen files (all 16 hashed files matched; the notebook itself differed only by
+  the instance entered and its outputs). Jobs, each tagged with the experiment ID p111-f1b99e67ee15 and each
+  retrieved with its submitted circuits matching the frozen fingerprints: A2 dbf58r8m94ac738ssbi0 (19:11:41 UTC),
+  pilot dbf59bnsstms73fd4ntg (19:12:46 UTC), B dbf59tvpc3tc739mp16g (19:13:59 UTC). No other job on the instance that
+  day; nothing resubmitted. QPU usage 23, 6 and 65 seconds.
+- Part A2 replicated: E_B(main) 1.383 (0.016), E_A(main) 0.828 (0.018), E_A(both) 1.558 (0.014); B1, B2, B3 hold by
+  23.8, 40.4 and 22.8 standard errors. E_B(main) is lower than in the first run (1.521).
+- Pilot: F 0.760 (main/B) and 0.694 (both/A); no technical failure.
+- Part B passed: F_B(main) 0.761 (0.005), F_A(main) 0.431 (0.006), F_A(both) 0.683 (0.006); D1, D2, D3 hold by 52.1,
+  32.8 and 41.4 standard errors. Controls 0.431, 0.470, 0.431 (ideal 0.5); both/B 0.808. Results in `run/`.
+- `run/phase111_hardware_run_executed.ipynb` is the executed notebook with the IBM instance and plan identifiers
+  replaced by placeholders; all outputs are otherwise kept.

@@ -1,0 +1,55 @@
+{
+ "job_id": "dbf59bnsstms73fd4ntg",
+ "experiment_id": "p111-f1b99e67ee15",
+ "step": "pilot",
+ "tag": "p111-f1b99e67ee15-pilot",
+ "backend": "ibm_fez",
+ "shots": 1000,
+ "circuit_names": [
+  "main_B_not_A/B/XX",
+  "main_B_not_A/B/YY",
+  "main_B_not_A/B/ZZ",
+  "both/A/XX",
+  "both/A/YY",
+  "both/A/ZZ",
+  "calib/0-4/00",
+  "calib/0-4/01",
+  "calib/0-4/10",
+  "calib/0-4/11",
+  "calib/21-16/00",
+  "calib/21-16/01",
+  "calib/21-16/10",
+  "calib/21-16/11"
+ ],
+ "fingerprints": [
+  "b6bae6720d7608f496af84a15fa073d0468ac611a291d7be156fd9fa40ddbce2",
+  "ba51166afb0dc528a4b68097605a5a972cb3af39fe715fa0937551a4e719eaab",
+  "3c271c809086004b303866f7c0e2f765de4b1891fffea9de05fda79a150c0303",
+  "2989044cc2401983dc69a4897ef6b3d8bba889f8463fa8bdf8e2f6d5508ca7c7",
+  "93254487b0bf045951ca344208ca29c1b60f9c6497e40e0716b79a85091891b0",
+  "535811db4ce76aec6fc61d88a925833af55a00eebdebf941cf15124fd2018f9b",
+  "b416fdd783dfaf0f725977a0550a2a115ea8ca71985149c64c923c2d15a8533d",
+  "80ce217434e71eecb8e2a08b2274a67b9f8c78f6aa8f7bdfa14a79d5db395a24",
+  "7e7f99c319f23e7f0c11e24843d110bb4b14112418e77db364a59db764fe42fe",
+  "22267ae85fc5a7f37b8be284e3e898c03d5997dcedea55ba13af4fe027259408",
+  "ddc45234a3793b2f2dc33bdb448850f7e3793a2809480397fee345231dcf34ec",
+  "c32a82e6c448559b8f3a3f39b6d4c6e016b84d1e12a6d77abd34cfd9b511d35e",
+  "88c7c32cd7455234a4cfb5acc2041482854101f7ad1bdbc54269f737cb150aa6",
+  "393200d4c754c73babe9e72ec0ab24e4cfaf251f98fe913b28ce02a6394a5ab3"
+ ],
+ "manifest_sha256": "f1b99e67ee15ed148b2550ea78d37c5094ff1fbdea9a4e8da1a8ec45532260d6",
+ "versions": {
+  "qiskit": "2.6.1",
+  "qiskit_ibm_runtime": "0.51.0"
+ },
+ "timestamp_check": {
+  "manifest_sha256": "f1b99e67ee15ed148b2550ea78d37c5094ff1fbdea9a4e8da1a8ec45532260d6",
+  "attested_utc": "2026-10-25T18:00:31Z",
+  "bitcoin_block": 973103,
+  "bitcoin_block_hash": "00000000000000000001fd3a7d7509d540d5e764e413d16acf9d07e090b8f47b",
+  "verified_with": "OpenTimestamps proof FREEZE_MANIFEST.txt.ots (upgraded); commitment equals the block's merkle root as reported by blockstream.info and mempool.space",
+  "verified_utc": "2026-10-25T18:56:40Z"
+ },
+ "recovered_from_tag": false,
+ "recorded_utc": "2026-10-25T19:12:47.000301+00:00"
+}
