@@ -61,7 +61,8 @@ not independently timestamped. Phase 111 was frozen before running: `phase111/FR
 every file the run used, and its OpenTimestamps proof (`FREEZE_MANIFEST.txt.ots`, checkable with the OpenTimestamps client or at opentimestamps.org) places it
 in Bitcoin block 973103, before any Phase 111 job was submitted. Amendments after
 a design was fixed are listed in the run logs. Edits made for this release, none affecting any result: file paths
-changed to the layout of this repository; the IBM instance identifier removed from the hardware notebook, and the IBM instance and plan identifiers replaced in
+changed to the layout of this repository; the IBM instance identifier removed from the hardware notebook (its IBM service-plan identifier, a catalog ID,
+was redacted later, before the repository was made public), and the IBM instance and plan identifiers replaced in
 the executed Phase 111 notebook; internal
 references removed from one docstring and from the two results summaries, whose sections on the grant application
 were dropped.
