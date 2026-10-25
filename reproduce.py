@@ -17,6 +17,7 @@ import numpy as np
 ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(ROOT, 'phase106'))
 sys.path.insert(0, os.path.join(ROOT, 'phase107'))
+sys.path.insert(0, os.path.join(ROOT, 'phase111'))
 
 FAILS = []
 
@@ -50,6 +51,26 @@ def provenance():
         if not ok:
             FAILS.append(rel)
         print(f'  {rel:52s} {"matches" if ok else "DOES NOT MATCH"}')
+    freeze()
+
+
+def freeze():
+    """Phase 111: every file in the freeze manifest matches it, and the manifest is the one whose Bitcoin timestamp is
+    recorded in TIMESTAMP_CHECK.json (the proof itself, FREEZE_MANIFEST.txt.ots, is checked with OpenTimestamps)."""
+    d = os.path.join(ROOT, 'phase111')
+    lines = open(os.path.join(d, 'FREEZE_MANIFEST.txt'), encoding='utf8').read().splitlines()
+    paths = {l[4:].split(': ', 1)[0]: l[4:].split(': ', 1)[1] for l in lines if l.startswith('#   ')}
+    hashes = {l.split(None, 1)[1]: l.split(None, 1)[0] for l in lines if l.strip() and not l.startswith('#')}
+    bad = [n for n, h in hashes.items() if sha256(os.path.join(ROOT, paths[n])) != h]
+    with open(os.path.join(d, 'TIMESTAMP_CHECK.json')) as f:
+        ts = json.load(f)
+    stamped = ts['manifest_sha256'] == sha256(os.path.join(d, 'FREEZE_MANIFEST.txt'))
+    if bad or not stamped:
+        FAILS.append('phase111 freeze')
+    print(f'  {"phase111: " + str(len(hashes)) + " frozen files against FREEZE_MANIFEST.txt":52s} '
+          f'{"match" if not bad else "DO NOT MATCH: " + str(bad)}')
+    print(f'  {"phase111: manifest timestamped (TIMESTAMP_CHECK.json)":52s} '
+          f'{"Bitcoin block " + str(ts["bitcoin_block"]) + ", " + ts["attested_utc"] if stamped else "DOES NOT MATCH"}')
 
 
 # ---------------------------------------------------------------- Section 3: identical erasure (Table 1)
@@ -194,6 +215,37 @@ def hardware():
     check('  B3: E_B(main) above E_A(main)', 30, (eb[0] - ea[0]) / np.hypot(eb[1], ea[1]), 0)
 
 
+def decoding():
+    """Section 5, second run: decoded recovery and the replicated witness test, from the stored raw counts."""
+    import p111_analyse as AN
+    AN.N_BOOT = 200                                  # readout-corrected values are not in the paper
+    d = os.path.join(ROOT, 'phase111')
+    with open(os.path.join(d, 'p111_plan.json')) as f:
+        plan = json.load(f)
+    with open(os.path.join(d, 'run', 'B_raw_counts.json')) as f:
+        b = AN.analyse_B(json.load(f)['counts'], plan)
+    print('\nSection 5, second run: entanglement fidelity after region-local decoding (raw counts)')
+    for name, (F, se) in {'main_B_not_A/B': (0.761, 0.005), 'both/A': (0.683, 0.006),
+                          'main_B_not_A/A': (0.431, 0.006)}.items():
+        check(f'{name} F', F, b['pairs'][name]['F'], 3)
+        check(f'{name} SE', se, b['pairs'][name]['F_se'], 3)
+    check('  abstract: recovered by the main region', 0.76, b['pairs']['main_B_not_A/B']['F'], 2)
+    check('  abstract: not recovered by the main region', 0.43, b['pairs']['main_B_not_A/A']['F'], 2)
+    check('  abstract: recovered by the both region', 0.68, b['pairs']['both/A']['F'], 2)
+    for k, z in {'D1': 52, 'D2': 33, 'D3': 41}.items():
+        check(f'  {k} standard errors', z, b['tests'][k]['z'], 0)
+    ideal_half = [b['pairs'][n]['F'] for n in ('main_B_not_A/A', 'neither/A', 'neither/B')]
+    check('  ideal-1/2 cases: lowest', 0.43, min(ideal_half), 2)
+    check('  ideal-1/2 cases: highest', 0.47, max(ideal_half), 2)
+    check('  B from the both region', 0.81, b['pairs']['both/B']['F'], 2)
+    with open(os.path.join(d, 'run', 'A2_raw_counts.json')) as f:
+        a2 = AN.analyse_A2(json.load(f)['counts'], json.load(open(os.path.join(ROOT, 'phase107', 'testB_plan.json'))))
+    print('  Replication of the witness test (archived circuits)')
+    check('  E_B(main)', 1.38, a2['witnesses']['main_B_not_A/B']['E'], 2)
+    for k, z in {'B1': 24, 'B2': 40, 'B3': 23}.items():
+        check(f'  {k} standard errors', z, a2['tests'][k]['z'], 0)
+
+
 if __name__ == '__main__':
     provenance()
     identical()
@@ -203,5 +255,6 @@ if __name__ == '__main__':
         with open(os.path.join(ROOT, 'phase107', 'results.json')) as f:
             noise(json.load(f))
     hardware()
+    decoding()
     print('\nALL NUMBERS REPRODUCE' if not FAILS else f'\n{len(FAILS)} MISMATCHES: {FAILS}')
     sys.exit(1 if FAILS else 0)
