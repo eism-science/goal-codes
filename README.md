@@ -58,7 +58,7 @@ They mention a grant application the work was planned for, folder locations on t
 were drafted with AI assistance (see the paper's statement on AI tools). The run logs
 report that each design's SHA-256 hash was recorded before its analysis ran; for Phases 106 and 107 this chronology was
 not independently timestamped. Phase 111 was frozen before running: `phase111/FREEZE_MANIFEST.txt` lists the SHA-256 of
-every file the run used, and its OpenTimestamps proof (`FREEZE_MANIFEST.txt.ots`, checkable with `ots verify`) places it
+every file the run used, and its OpenTimestamps proof (`FREEZE_MANIFEST.txt.ots`, checkable with the OpenTimestamps client or at opentimestamps.org) places it
 in Bitcoin block 973103, before any Phase 111 job was submitted. Amendments after
 a design was fixed are listed in the run logs. Edits made for this release, none affecting any result: file paths
 changed to the layout of this repository; the IBM instance identifier removed from the hardware notebook, and the IBM instance and plan identifiers replaced in
