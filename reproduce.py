@@ -143,6 +143,14 @@ def noise(results):
     paths = prim['M1']['Vbar_q_all_paths']
     check('  readout-weighted, p=0.2: lowest of twenty paths', 0.001, min(paths), 3)
     check('  readout-weighted, p=0.2: highest of twenty paths', 0.017, max(paths), 3)
+    # "for at least half of the twenty paths sharing gives nothing at the balanced goal, yet the weights still change
+    # the optimal code": the median sharing gain at w = 1/2 is zero, and every path has a positive value of knowing it
+    ok = prim['M1']['gain_q_w05'] == 0 and all(v > 0 for v in paths) and len(paths) == 20
+    if not ok:
+        FAILS.append('readout-weighted reallocation')
+    print(f'  {"  readout-weighted, p=0.2: no sharing gain for half the paths":52s} '
+          f'median gain {prim["M1"]["gain_q_w05"]:.4f}, paths with V>0: {sum(v > 0 for v in paths)} of {len(paths)}'
+          f' {"OK" if ok else "MISMATCH"}')
 
 
 def recompute_noise():
@@ -230,8 +238,8 @@ def decoding():
         check(f'{name} F', F, b['pairs'][name]['F'], 3)
         check(f'{name} SE', se, b['pairs'][name]['F_se'], 3)
     check('  abstract: recovered by the main region', 0.76, b['pairs']['main_B_not_A/B']['F'], 2)
-    check('  abstract: not recovered by the main region', 0.43, b['pairs']['main_B_not_A/A']['F'], 2)
-    check('  abstract: recovered by the both region', 0.68, b['pairs']['both/A']['F'], 2)
+    check('  not recovered by the main region (2 d.p.)', 0.43, b['pairs']['main_B_not_A/A']['F'], 2)
+    check('  recovered by the both region (2 d.p.)', 0.68, b['pairs']['both/A']['F'], 2)
     for k, z in {'D1': 52, 'D2': 33, 'D3': 41}.items():
         check(f'  {k} standard errors', z, b['tests'][k]['z'], 0)
     ideal_half = [b['pairs'][n]['F'] for n in ('main_B_not_A/A', 'neither/A', 'neither/B')]
